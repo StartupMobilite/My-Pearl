@@ -1,0 +1,8 @@
+MyPearl.Fenetre_Inscription, MyPearl;md529b408c98a64170daff865d08f01bfb4.Fenetre_Inscription
+MyPearl.Fenetre_Inscription, MyPearl, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md529b408c98a64170daff865d08f01bfb4.Fenetre_Inscription
+MyPearl.Fenetre_Inscription;md529b408c98a64170daff865d08f01bfb4.Fenetre_Inscription
+mypearl.Fenetre_Inscription;md529b408c98a64170daff865d08f01bfb4.Fenetre_Inscription
+MyPearl.MainActivity, MyPearl;md529b408c98a64170daff865d08f01bfb4.MainActivity
+MyPearl.MainActivity, MyPearl, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md529b408c98a64170daff865d08f01bfb4.MainActivity
+MyPearl.MainActivity;md529b408c98a64170daff865d08f01bfb4.MainActivity
+mypearl.MainActivity;md529b408c98a64170daff865d08f01bfb4.MainActivity
