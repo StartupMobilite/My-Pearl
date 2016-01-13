@@ -1,9 +1,0 @@
-Razafinjato andritiana : Mise en place d'un cahier des charges / Tutoriel en ligne xamarin /creation d'un trello pour l'equipe / repartition des taches de la journee/ installation des differents logiciels /Debut de mockup via balsamiq / prioritisation des taches sur trello
-
-Mark MALAJ : Mise en place d'un cahier des charges / tutoriel github en ligne/ tutoriel github avec paul /installation des differents logiciels / debut de mockup / prioritisation des taches sur trello
-
-Jacques Sounvi : Mise en place d'un cahier des charges /Tutoriel  xamarin en ligne/ installation des differents logiciels / debut de mockup / prioritisation des taches sur trello
-
-
-
-Equipe demandant l’application n’etant pas la, les fonctionnalites et design seront surement a revoir.
