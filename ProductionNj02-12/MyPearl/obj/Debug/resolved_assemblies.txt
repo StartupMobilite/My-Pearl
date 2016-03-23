@@ -1,9 +1,0 @@
-c:\users\andji\documents\visual studio 2015\Projects\MyPearl\MyPearl\obj\Debug\assemblies\MyPearl.dll
-c:\users\andji\documents\visual studio 2015\Projects\MyPearl\MyPearl\obj\Debug\assemblies\Mono.Android.dll
-c:\users\andji\documents\visual studio 2015\Projects\MyPearl\MyPearl\obj\Debug\assemblies\mscorlib.dll
-c:\users\andji\documents\visual studio 2015\Projects\MyPearl\MyPearl\obj\Debug\assemblies\System.Core.dll
-c:\users\andji\documents\visual studio 2015\Projects\MyPearl\MyPearl\obj\Debug\assemblies\System.dll
-c:\users\andji\documents\visual studio 2015\Projects\MyPearl\MyPearl\obj\Debug\assemblies\System.Xml.dll
-c:\users\andji\documents\visual studio 2015\Projects\MyPearl\MyPearl\obj\Debug\assemblies\System.Xml.Linq.dll
-c:\users\andji\documents\visual studio 2015\Projects\MyPearl\MyPearl\obj\Debug\assemblies\System.Runtime.Serialization.dll
-c:\users\andji\documents\visual studio 2015\Projects\MyPearl\MyPearl\obj\Debug\assemblies\System.ServiceModel.Internals.dll
