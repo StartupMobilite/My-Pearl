@@ -20,15 +20,6 @@
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".DetailActivity"
-            android:label="@string/title_activity_detail"
-            android:parentActivityName=".ListActivity"
-            android:theme="@style/AppTheme.NoActionBar">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.jacques.perleapplication.ListActivity" />
-        </activity>
-        <activity
             android:name=".RegisterActivity"
             android:label="@string/title_activity_register"
             android:parentActivityName=".LoginActivity"
@@ -48,17 +39,9 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".upload"
-            android:label="@string/title_activity_upload"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".UploadPrincipale"
-            android:label="@string/title_activity_upload_principale"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
             android:name=".dataList"
             android:label="@string/title_activity_data_list" />
-        <activity android:name=".volleyUpload"></activity>
+        <activity android:name=".Upload"></activity>
     </application>
 
 </manifest>
