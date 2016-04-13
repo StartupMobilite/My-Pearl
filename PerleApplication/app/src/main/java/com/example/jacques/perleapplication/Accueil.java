@@ -13,7 +13,7 @@ import android.widget.TextView;
 
 public class Accueil extends ActionBarActivity  {
 
-    private static final int TIME_TO_WAIT = 1 * 3000;
+    private static final int TIME_TO_WAIT = 1 * 2000;
     TextView titre_accueil;
     @Override
     protected void onCreate(Bundle savedInstanceState) {

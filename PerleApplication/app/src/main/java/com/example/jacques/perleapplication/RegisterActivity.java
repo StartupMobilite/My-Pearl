@@ -5,7 +5,6 @@ import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -21,7 +20,7 @@ public class RegisterActivity extends AppCompatActivity implements AsyncResponse
 
     Button btnregister;
     Button btnLinkToLoginScreen;
-    EditText name,password,vpassword,email;
+    EditText username,password,surname,email,tel,school,firstName,fonction;
 
     String LOG="RegisterActivity";
 
@@ -42,10 +41,15 @@ public class RegisterActivity extends AppCompatActivity implements AsyncResponse
         });
         //getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        name = (EditText) findViewById(R.id.name);
+        username = (EditText) findViewById(R.id.username);
         password = (EditText) findViewById(R.id.password);
-        vpassword = (EditText) findViewById(R.id.vpassword);
         email = (EditText) findViewById(R.id.email);
+        surname = (EditText) findViewById(R.id.surname);
+        tel = (EditText) findViewById(R.id.tel);
+        school = (EditText) findViewById(R.id.school);
+        firstName = (EditText) findViewById(R.id.firstName);
+        fonction = (EditText) findViewById(R.id.fonction);
+
         btnregister = (Button) findViewById(R.id.btnRegister);
         btnLinkToLoginScreen = (Button) findViewById(R.id.btnLinkToLoginScreen);
 
@@ -53,14 +57,22 @@ public class RegisterActivity extends AppCompatActivity implements AsyncResponse
             @Override
             public void onClick(View v) {
                 HashMap postData = new HashMap ();
-                String Username = name.getText().toString();
+                String Username = username.getText().toString();
                 String Password = password.getText().toString();
-                String vPassword = vpassword.getText().toString();
+                String nom = surname.getText().toString();
+                String FirstName = firstName.getText().toString();
+                String Tel = tel.getText().toString();
+                String School = school.getText().toString();
                 String Email = email.getText().toString();
+                String Fonction = fonction.getText().toString();
                 postData.put("txtUsername", Username);
                 postData.put("txtPassword", Password );
-                postData.put("newPassword", vPassword );
-                postData.put("mail", Email );
+                postData.put("txtname", nom );
+                postData.put("txtprenom", FirstName );
+                postData.put("txtmail", Email );
+                postData.put("txttel", Tel );
+                postData.put("txtecole", School );
+                postData.put("txtfonction", Fonction );
                 PostResponseAsyncTask loginTask = new PostResponseAsyncTask(RegisterActivity.this, postData);
                 loginTask.execute("http://maperle.esy.es/connection/register.php");
             }
