@@ -8,14 +8,11 @@ import android.view.View;
 import android.view.ViewGroup;
 
 /**
- * Created by jacques on 14/04/2016.
+ * Created by jacques on 22/04/2016.
  */
+public class FragmentGallery extends Fragment {
 
-
-public class HomeFragment extends Fragment {
-
-    public HomeFragment() {
-        // Required empty public constructor
+    public FragmentGallery() {
     }
 
     @Override
@@ -27,7 +24,7 @@ public class HomeFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.fragment_home, container, false);
+        View rootView = inflater.inflate(R.layout.fragment_gallery, container, false);
 
 
         // Inflate the layout for this fragment
@@ -44,3 +41,5 @@ public class HomeFragment extends Fragment {
         super.onDetach();
     }
 }
+
+

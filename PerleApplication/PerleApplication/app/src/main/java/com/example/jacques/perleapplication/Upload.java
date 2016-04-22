@@ -6,7 +6,7 @@ import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
-import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Base64;
 import android.view.View;
 import android.widget.Button;
@@ -27,7 +27,7 @@ import java.io.IOException;
 import java.util.Hashtable;
 import java.util.Map;
 
-public class Upload extends ActionBarActivity implements View.OnClickListener {
+public class Upload extends AppCompatActivity implements View.OnClickListener {
 
     private Button buttonChoose;
     private Button buttonUpload;
@@ -76,46 +76,35 @@ public class Upload extends ActionBarActivity implements View.OnClickListener {
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String s) {
-                        //Disimissing the progress dialog
                         loading.dismiss();
-                        //Showing toast message of the response
                         Toast.makeText(Upload.this, s, Toast.LENGTH_LONG).show();
                     }
                 },
                 new Response.ErrorListener() {
                     @Override
                     public void onErrorResponse(VolleyError volleyError) {
-                        //Dismissing the progress dialog
                         loading.dismiss();
 
-                        //Showing toast
                         Toast.makeText(Upload.this, volleyError.getMessage().toString(), Toast.LENGTH_LONG).show();
                     }
                 }){
             @Override
             protected Map<String, String> getParams() throws AuthFailureError {
-                //Converting Bitmap to String
                 String image = getStringImage(bitmap);
 
-                //Getting Image Name
                 String name = editTextName.getText().toString().trim();
 
-                //Creating parameters
                 Map<String,String> params = new Hashtable<String, String>();
 
-                //Adding parameters
                 params.put(KEY_IMAGE, image);
                 params.put(KEY_NAME, name);
 
-                //returning parameters
                 return params;
             }
         };
 
-        //Creating a Request Queue
         RequestQueue requestQueue = Volley.newRequestQueue(this);
 
-        //Adding request to the queue
         requestQueue.add(stringRequest);
     }
 
@@ -133,9 +122,7 @@ public class Upload extends ActionBarActivity implements View.OnClickListener {
         if (requestCode == PICK_IMAGE_REQUEST && resultCode == RESULT_OK && data != null && data.getData() != null) {
             Uri filePath = data.getData();
             try {
-                //Getting the Bitmap from Gallery
                 bitmap = MediaStore.Images.Media.getBitmap(getContentResolver(), filePath);
-                //Setting the Bitmap to ImageView
                 imageView.setImageBitmap(bitmap);
             } catch (IOException e) {
                 e.printStackTrace();
@@ -151,8 +138,8 @@ public class Upload extends ActionBarActivity implements View.OnClickListener {
 
         if(v == buttonUpload){
             uploadImage();
-                Intent i = new Intent(Upload.this,dataList.class);
-                startActivity(i);
+                //Intent i = new Intent(Upload.this,dataList.class);
+                //startActivity(i);
 
 
         }

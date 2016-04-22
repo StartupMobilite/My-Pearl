@@ -71,10 +71,23 @@ public class NavigationDrawer extends AppCompatActivity implements FragmentDrawe
         String title = getString(R.string.app_name);
         switch (position) {
             case 0:
-                //fragment = new HomeFragment();
-                //title = getString(R.string.title_home);
-                intent  = new Intent(this,dataList
+                intent  = new Intent(this,Upload
                         .class);
+                break;
+            case 1:
+                intent = new Intent(this,dataList.class);
+
+                break;
+            case 2:
+
+                break;
+
+            case 3:
+                //intent = new Intent(this,PicassoActivity.class);
+                break;
+
+            case 4:
+                intent = new Intent(this,PicassoActivity.class);
                 break;
 
         }
