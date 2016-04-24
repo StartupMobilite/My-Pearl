@@ -23,9 +23,19 @@ public class NavigationDrawer extends AppCompatActivity implements FragmentDrawe
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+
+
+
+
+
+
+
+
+
         setTitle("maperle");
 
-        getSupportActionBar().setDisplayShowHomeEnabled(true);
 
         drawerFragment = (FragmentDrawer)
                 getSupportFragmentManager().findFragmentById(R.id.fragment_navigation_drawer);
@@ -54,6 +64,10 @@ public class NavigationDrawer extends AppCompatActivity implements FragmentDrawe
             return true;
         }
 
+        if(id ==R.id.nav_Home){
+            return true;
+        }
+
 
         return super.onOptionsItemSelected(item);
 
@@ -79,15 +93,20 @@ public class NavigationDrawer extends AppCompatActivity implements FragmentDrawe
 
                 break;
             case 2:
-
+                intent = new Intent(this,PicassoActivity.class);
                 break;
 
             case 3:
-                //intent = new Intent(this,PicassoActivity.class);
+                intent = new Intent(this,LoginActivity.class);
+                Toast.makeText(getApplicationContext(),"succes deconnexion",Toast.LENGTH_SHORT).show();
                 break;
 
             case 4:
                 intent = new Intent(this,PicassoActivity.class);
+                break;
+
+            case 5:
+                intent = new Intent(this,LoginActivity.class);
                 break;
 
         }
@@ -102,6 +121,7 @@ public class NavigationDrawer extends AppCompatActivity implements FragmentDrawe
 
             // set the toolbar title
             getSupportActionBar().setTitle(title);
+
         }
     }
 }

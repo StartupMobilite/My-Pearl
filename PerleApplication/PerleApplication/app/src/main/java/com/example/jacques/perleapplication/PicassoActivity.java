@@ -10,6 +10,7 @@ import java.util.ArrayList;
 
 public class PicassoActivity extends AppCompatActivity {
 
+
     private final String android_version_names[] = {
             "test",
             "Ratp",
@@ -34,6 +35,16 @@ public class PicassoActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_picasso);
+
+       // android.support.v7.widget.Toolbar toolbar = (android.support.v7.widget.Toolbar) findViewById(R.id.toolbar);
+       // setSupportActionBar(toolbar);
+
+
+
+
+        //getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        //getSupportActionBar().setDisplayShowHomeEnabled(true);
+
 
         initViews();
     }

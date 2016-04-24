@@ -6,6 +6,7 @@ import android.support.v7.app.ActionBarActivity;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
+import android.widget.Toolbar;
 
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
@@ -25,7 +26,7 @@ import java.util.HashMap;
 public class dataList extends ActionBarActivity {
 
     String myJson;
-
+    Toolbar toolbar;
     private static final String TAG_RESULTS="result";
     private static final String TAG_ID = "id";
     private static final String TAG_User = "username";
@@ -45,6 +46,11 @@ public class dataList extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_data_list);
+
+
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+
 
         setTitle("contact");
         list = (ListView) findViewById(R.id.listView);

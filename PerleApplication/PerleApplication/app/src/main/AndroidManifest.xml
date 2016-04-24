@@ -40,8 +40,11 @@
         </activity>
         <activity
             android:name=".dataList"
-            android:label="@string/title_activity_data_list" />
-        <activity android:name=".Upload" />
+            android:label="@string/title_activity_data_list"
+            android:parentActivityName=".NavigationDrawer"/>
+
+        <activity android:name=".Upload"
+            android:parentActivityName=".NavigationDrawer"/>
         <activity
             android:name=".NavigationDrawer"
             android:label="@string/title_activity_navigation_drawer"

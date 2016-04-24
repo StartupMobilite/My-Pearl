@@ -5,8 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context="com.example.jacques.perleapplication.PicassoActivity">
-
+    tools:context=".PicassoActivity">
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/card_recycler_view"
