@@ -1,0 +1,67 @@
+<resources>
+    <string name="app_name">MaPerle</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_search">Search</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="title_activity_list">ListActivity</string>
+    <string name="title_activity_detail">DetailActivity</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_name">Username</string>
+    <string name="btn_login">LOGIN</string>
+    <string name="btn_register">REGISTER</string>
+    <string name="btn_link_to_register">Not a member? Sign up now.</string>
+    <string name="btn_link_to_login">Already registred! Login Me.</string>
+    <string name="welcome">Welcome</string>
+    <string name="btn_logout">LOGOUT</string>
+    <string name="name">Fullname</string>
+    <string name="title_activity_register">RegisterActivity</string>
+    <string name="hint_vpassword">retape password</string>
+
+    <string name="nav_item_home">Home</string>
+    <string name="nav_item_gallery">Gallery</string>
+    <string name="nav_item_upload">Upload</string>
+    <string name="nav_item_logout">Logout</string>
+
+
+
+
+    <string-array name="nav_drawer_labels">
+        <item>@string/nav_item_upload</item>
+        <item>@string/nav_item_home</item>
+        <item>@string/nav_item_gallery</item>
+        <item>@string/nav_item_logout</item>
+    </string-array>
+
+
+    <string name="title_messages">Messages</string>
+    <string name="title_friends">Friends</string>
+    <string name="title_home">Home</string>
+    <string name="title_gallery">Gallery</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_accueil">Accueil</string>
+    <string name="title_activity_upload">upload</string>
+    <string name="string_choose_file">choose file</string>
+    <string name="string_upload_image">upload image</string>
+    <string name="string_view_image">view image</string>
+    <string name="title_activity_switch">switchActivity</string>
+    <string name="title_activity_upload_principale">UploadPrincipale</string>
+    <string name="surname">Surname</string>
+    <string name="title_activity_data_list">dataList</string>
+    <string name="title_activity_navigation_drawer">NavigationDrawer</string>
+    <string name="title_activity_card_view">CardViewActivity</string>
+    <string name="title_activity_view_image">ViewImageActivity</string>
+    <string name="title_activity_picasso">PicassoActivity</string>
+    <string name="title_activity_upload_to_server">UploadToServer</string>
+    <string name="login_error">Cannot log you in</string>
+    <string name="login_success">Success!</string>
+    <string name="disconnection_success">You are now disconnected!</string>
+    <string name="like">Like</string>
+    <string name="dislike">Dislike</string>
+    <string name="empty_swipe_deck">It seems you swiped everybody in the area!\nCome back later to swipe again!</string>
+
+</resources>
