@@ -20,7 +20,17 @@ app:layout_behavior="@string/appbar_scrolling_view_behavior"
         android:text="Ma Perle"
         android:textColor="@color/textColorPrimary"
         android:id="@+id/titre_accueil"
-        android:textSize="@dimen/textSize"
+        android:textSize="25sp"
+        android:textStyle="italic"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="italic"
+        android:text="find the right target"
+        android:textSize="20sp"
+        android:layout_below="@+id/titre_accueil"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/textColorPrimary" />
 </RelativeLayout>

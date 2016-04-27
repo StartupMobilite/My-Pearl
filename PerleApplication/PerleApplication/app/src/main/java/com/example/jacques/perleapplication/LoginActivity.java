@@ -64,13 +64,13 @@ public class LoginActivity extends AppCompatActivity implements AsyncResponse {
     public void processFinish(String s) {
         Log.d(LOG, s);
         if(s.contains("succes")){
-            Toast.makeText(LoginActivity.this,"succes Login",Toast.LENGTH_LONG).show();
+            Toast.makeText(LoginActivity.this, getString(R.string.login_success),Toast.LENGTH_LONG).show();
             Intent in = new Intent(LoginActivity.this,NavigationDrawer
                     .class);
             startActivity(in);
         }
         else{
-            Toast.makeText(LoginActivity.this,"erreure  Login",Toast.LENGTH_LONG).show();
+            Toast.makeText(LoginActivity.this, getString(R.string.login_error),Toast.LENGTH_LONG).show();
         }
         //Toast.makeText(MainActivity.this,s,Toast.LENGTH_LONG).show();
     }

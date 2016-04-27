@@ -1,19 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:swipedeck="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
     tools:context=".PicassoActivity">
 
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/card_recycler_view"
-        android:scrollbars="vertical"
+    <com.daprlabs.cardstack.SwipeFrameLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/empty_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="50dp"
+            android:gravity="center_horizontal"
+            android:text="@string/empty_swipe_deck"
+            android:textSize="16sp"
+            />
+
+        <com.daprlabs.cardstack.SwipeDeck
+            android:id="@+id/swipe_deck"
+            android:layout_width="match_parent"
+            android:layout_height="480dp"
+            android:padding="20dp"
+            swipedeck:card_spacing="10dp"
+            swipedeck:max_visible="3"
+            swipedeck:render_above="true"
+            swipedeck:rotation_degrees="15" />
+
+        <LinearLayout
+            android:id="@+id/buttons_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            >
+
+            <Button
+                android:id="@+id/like_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_margin="4dp"
+                android:background="@android:color/transparent"
+                android:text="@string/like"
+                android:textColor="@android:color/holo_blue_light"
+                />
+
+            <Button
+                android:id="@+id/dislike_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_margin="4dp"
+                android:background="@android:color/transparent"
+                android:text="@string/dislike"
+                android:textColor="@color/bel_red_text"
+                />
+
+        </LinearLayout>
+
+    </com.daprlabs.cardstack.SwipeFrameLayout>
 
     <include layout="@layout/content_picasso"/>
-
-
 </android.support.design.widget.CoordinatorLayout>

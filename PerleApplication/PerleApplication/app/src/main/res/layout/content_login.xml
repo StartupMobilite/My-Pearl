@@ -21,7 +21,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
             android:background="@color/white"
-            android:hint="@string/hint_email"
+            android:hint="login"
             android:inputType="textEmailAddress"
             android:padding="10dp"
             android:singleLine="true"
@@ -41,7 +41,6 @@
             android:textColor="@color/input_login"
             android:textColorHint="@color/input_login_hint" />
 
-        <!-- Login Button -->
 
         <Button
             android:id="@+id/btnLogin"
@@ -52,7 +51,6 @@
             android:text="@string/btn_login"
             android:textColor="@color/btn_login" />
 
-        <!-- Link to Login Screen -->
 
         <Button
             android:id="@+id/btnRegisterScreen"

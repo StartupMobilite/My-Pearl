@@ -144,8 +144,8 @@ public class Upload extends AppCompatActivity implements View.OnClickListener {
 
         if(v == buttonUpload){
             uploadImage();
-                //Intent i = new Intent(Upload.this,dataList.class);
-                //startActivity(i);
+                Intent i = new Intent(Upload.this,PicassoActivity.class);
+                startActivity(i);
 
 
         }

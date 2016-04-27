@@ -57,5 +57,11 @@
     <string name="title_activity_view_image">ViewImageActivity</string>
     <string name="title_activity_picasso">PicassoActivity</string>
     <string name="title_activity_upload_to_server">UploadToServer</string>
+    <string name="login_error">Cannot log you in</string>
+    <string name="login_success">Success!</string>
+    <string name="disconnection_success">You are now disconnected!</string>
+    <string name="like">Like</string>
+    <string name="dislike">Dislike</string>
+    <string name="empty_swipe_deck">It seems you swiped everybody in the area!\nCome back later to swipe again!</string>
 
 </resources>

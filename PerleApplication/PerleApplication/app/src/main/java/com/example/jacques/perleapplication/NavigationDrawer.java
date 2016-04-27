@@ -3,8 +3,6 @@ package com.example.jacques.perleapplication;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentTransaction;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -12,6 +10,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
+
+import com.example.jacques.perleapplication.fragment.FragmentDrawer;
 
 public class NavigationDrawer extends AppCompatActivity implements FragmentDrawer.FragmentDrawerListener {
     private FragmentDrawer drawerFragment;
@@ -98,7 +98,7 @@ public class NavigationDrawer extends AppCompatActivity implements FragmentDrawe
 
             case 3:
                 intent = new Intent(this,LoginActivity.class);
-                Toast.makeText(getApplicationContext(),"succes deconnexion",Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), getString(R.string.disconnection_success),Toast.LENGTH_SHORT).show();
                 break;
 
             case 4:
@@ -114,14 +114,12 @@ public class NavigationDrawer extends AppCompatActivity implements FragmentDrawe
         startActivity(intent);
 
         if (fragment != null) {
-            FragmentManager fragmentManager = getSupportFragmentManager();
-            FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-            fragmentTransaction.replace(R.id.container_body, fragment);
-            fragmentTransaction.commit();
+            getSupportFragmentManager()
+                .beginTransaction()
+                .replace(R.id.container_body, fragment)
+                .commit();
 
-            // set the toolbar title
             getSupportActionBar().setTitle(title);
-
         }
     }
 }

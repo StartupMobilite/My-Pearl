@@ -14,7 +14,9 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@color/bg_login"
         android:text="Choose Image"
+        android:textColor="@color/textColorPrimary"
         android:id="@+id/buttonChoose" />
 
 
@@ -35,5 +37,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Upload Image"
+        android:background="@color/bg_login"
+        android:textColor="@color/textColorPrimary"
         android:id="@+id/buttonUpload" />
 </LinearLayout>
